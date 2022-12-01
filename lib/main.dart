@@ -8,20 +8,15 @@ void main() {
   runApp(const MyApp());
 }
 
-class MyApp extends StatefulWidget {
+class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
-  @override
-  State<MyApp> createState() => _MyAppState();
-}
-
-class _MyAppState extends State<MyApp> {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
       title: "NTS Preparation",
       home: Scaffold(
-        appBar: AppBarWidget(title: '', actions: []),
+        appBar: AppBarWidget(title: 'NTS Preparation', actions: []),
         body: HomeScreen(),
       ),
     );
