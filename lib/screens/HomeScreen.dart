@@ -8,7 +8,11 @@ class HomeScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      child: Center(child: Text('home screen')),
+      child: Center(
+          child: Text(
+        'Home Page',
+        style: TextStyle(fontSize: 50),
+      )),
     );
   }
 }
